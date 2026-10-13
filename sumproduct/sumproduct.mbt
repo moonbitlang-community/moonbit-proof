@@ -9,8 +9,8 @@
 ///                     = i*(i+1)*(i+2)
 ///                     = (i+1)*i*(i+2)     ✓ matches invariant at i+1
 pub fn sum_product(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sumproduct_ok(n, result),
 } {

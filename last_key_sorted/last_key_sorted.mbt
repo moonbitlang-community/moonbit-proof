@@ -4,9 +4,9 @@
 /// The proof is phrased as an upper-bound search plus a witness check on the
 /// predecessor position.
 pub fn last_key_sorted(
-  xs : FixedArray[Int],
-  key : Int,
-) -> Int where {
+  xs : FixedArray[Int32],
+  key : Int32,
+) -> Int32 where {
   proof_require: sorted(xs),
   proof_ensure: result => last_key_sorted_ok(xs, key, result),
 } {

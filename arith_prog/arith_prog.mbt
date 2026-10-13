@@ -8,10 +8,10 @@
 ///             = 2*a*(i+1) + d*(i²-i+2i) = 2*a*(i+1) + d*(i²+i)
 ///             = 2*a*(i+1) + d*(i+1)*i  ✓
 pub fn arith_sum(
-  n : Int,
-  a : Int,
-  d : Int,
-) -> Int where {
+  n : Int32,
+  a : Int32,
+  d : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => arith_ok(n, a, d, result),
 } {

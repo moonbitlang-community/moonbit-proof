@@ -5,8 +5,8 @@
 /// This is a specialized binary search with the postcondition written as a
 /// clean zero-prefix / one-suffix split.
 pub fn first_one(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: bits(xs),
   proof_require: bit_sorted(xs),
   proof_ensure: result => bit_partition_ok(xs, result),

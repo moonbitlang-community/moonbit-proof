@@ -8,9 +8,9 @@
 ///
 /// Returns pow - lin, proving >= 0.
 pub fn bernoulli(
-  x : Int,
-  n : Int,
-) -> Int where {
+  x : Int32,
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg_x(x),
   proof_require: nonneg_n(n),
   proof_ensure: result => bernoulli_ok(result),

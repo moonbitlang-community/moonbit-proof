@@ -21,8 +21,8 @@
 /// total_variation (triangle inequality + telescoping), and range tracking
 /// (min/max with universal bounds) into one unified proof.
 pub fn analyze(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: at_least_two(xs),
   proof_ensure: result => market_ok(xs, result),
 } {

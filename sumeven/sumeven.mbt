@@ -4,8 +4,8 @@
 /// Invariant: sum == i*(i+1).
 /// Preservation: sum + 2*(i+1) = i*(i+1) + 2*(i+1) = (i+1)*(i+2)  ✓
 pub fn sum_even(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sumeven_ok(n, result),
 } {

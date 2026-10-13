@@ -6,8 +6,8 @@
 /// Legend has it that young Gauss discovered this at age 10 by pairing terms:
 /// (1+n) + (2+(n-1)) + ... — each pair sums to (n+1), and there are n/2 pairs.
 pub fn sum_to(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => gauss_ok(n, result),
 } {

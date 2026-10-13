@@ -7,9 +7,9 @@
 /// and > instead of >= for the right side. This means the boundary is at the
 /// FIRST element strictly greater than key.
 pub fn upper_bound(
-  xs : FixedArray[Int],
-  key : Int,
-) -> Int where {
+  xs : FixedArray[Int32],
+  key : Int32,
+) -> Int32 where {
   proof_require: sorted(xs),
   proof_ensure: result => upper_bound_ok(xs, key, result),
 } {

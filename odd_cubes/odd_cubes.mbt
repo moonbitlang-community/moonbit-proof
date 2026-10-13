@@ -5,8 +5,8 @@
 /// Invariant:
 ///   sum == i²(2i²-1)
 pub fn odd_cubes(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => odd_cubes_ok(n, result),
 } {

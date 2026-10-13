@@ -5,13 +5,13 @@
 ///
 /// This is the squared norm of the 3D cross product.
 pub fn cauchy3_gap(
-  a : Int,
-  b : Int,
-  c : Int,
-  x : Int,
-  y : Int,
-  z : Int,
-) -> Int where {
+  a : Int32,
+  b : Int32,
+  c : Int32,
+  x : Int32,
+  y : Int32,
+  z : Int32,
+) -> Int32 where {
   proof_ensure: result => cauchy3_ok(a, b, c, x, y, z, result),
 } {
   (a * a + b * b + c * c) * (x * x + y * y + z * z) -

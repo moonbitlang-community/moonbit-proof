@@ -19,8 +19,8 @@
 /// partial sum xs[k] - xs[0] lies in [lo, hi], so any pairwise difference
 /// xs[i] - xs[j] <= hi - lo <= TV.
 pub fn signal_stats(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: at_least_two(xs),
   proof_ensure: result => signal_ok(xs, result),
 } {

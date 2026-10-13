@@ -8,9 +8,9 @@
 /// there are no matches. This is harder than find-first because
 /// the quantified property refers to a RANGE between two variables.
 pub fn find_last(
-  xs : FixedArray[Int],
-  key : Int,
-) -> Int where {
+  xs : FixedArray[Int32],
+  key : Int32,
+) -> Int32 where {
   proof_ensure: result => findlast_ok(xs, key, result),
 } {
   for i = 0, found = -1; i < xs.length(); {

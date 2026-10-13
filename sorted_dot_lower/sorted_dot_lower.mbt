@@ -10,9 +10,9 @@
 ///   = (dot - xs[0]*sumy) + (xs[i] - xs[0])*ys[i]
 ///   >= 0 + 0 = 0  (since xs[i] >= xs[0] and ys[i] >= 0)
 pub fn sorted_dot_excess(
-  xs : FixedArray[Int],
-  ys : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+  ys : FixedArray[Int32],
+) -> Int32 where {
   proof_require: sorted(xs),
   proof_require: same_length(xs, ys),
   proof_require: nonempty(xs),

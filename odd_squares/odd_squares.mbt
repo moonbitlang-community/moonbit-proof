@@ -5,8 +5,8 @@
 /// The proof uses the cubic invariant:
 ///   3*sum == i*(2*i-1)*(2*i+1)
 pub fn odd_squares(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => odd_squares_ok(n, result),
 } {

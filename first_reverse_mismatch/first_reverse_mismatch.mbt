@@ -3,9 +3,9 @@
 /// returns the smallest `i` such that `xs[i] != ys[n-1-i]`, or -1 if the
 /// arrays are reverse-equal.
 pub fn first_reverse_mismatch(
-  xs : FixedArray[Int],
-  ys : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+  ys : FixedArray[Int32],
+) -> Int32 where {
   proof_require: same_length(xs, ys),
   proof_ensure: result => first_reverse_mismatch_ok(xs, ys, result),
 } {

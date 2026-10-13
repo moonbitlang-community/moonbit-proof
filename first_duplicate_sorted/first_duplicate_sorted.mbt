@@ -5,8 +5,8 @@
 /// Sortedness turns the absence of an adjacent duplicate into a proof that the
 /// whole array is strictly increasing.
 pub fn first_duplicate(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: sorted(xs),
   proof_ensure: result => first_duplicate_ok(xs, result),
 } {

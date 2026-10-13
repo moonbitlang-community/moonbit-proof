@@ -6,8 +6,8 @@
 /// This pushes the binary-search style further than plain lower/upper bound by
 /// combining a partition search with a global minimum witness postcondition.
 pub fn rotation_pivot(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: nonempty(xs),
   proof_require: anchor_partition(xs),
   proof_require: anchor_segment_sorted(xs),

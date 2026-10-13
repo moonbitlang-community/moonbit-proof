@@ -11,8 +11,8 @@
 ///
 /// One of the most elegant Fibonacci identities.
 pub fn fib_sum_of_squares(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => fib_sq_ok(result),
 } {

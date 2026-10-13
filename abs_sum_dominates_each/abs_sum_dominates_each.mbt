@@ -4,8 +4,8 @@
 /// Returns `Σ |xs[i]|` and proves that every `|xs[k]|` is bounded by the
 /// returned value.
 pub fn abs_sum(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_ensure: result => abs_sum_dominates_each_ok(xs, result),
 } {
   for i = 0, sum = 0; i < xs.length(); {

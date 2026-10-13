@@ -6,9 +6,9 @@
 ///   all positions before `lo` are valid predecessors,
 ///   all positions from `hi` onward are strictly greater than `key`.
 pub fn predecessor(
-  xs : FixedArray[Int],
-  key : Int,
-) -> Int where {
+  xs : FixedArray[Int32],
+  key : Int32,
+) -> Int32 where {
   proof_require: sorted(xs),
   proof_ensure: result => predecessor_ok(xs, key, result),
 } {

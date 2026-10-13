@@ -5,8 +5,8 @@
 /// To avoid division in the proof obligation, the postcondition is:
 ///   42 * result == n(n-1)(2n-1)(3n^4 - 6n^3 + 3n + 1)
 pub fn sum_sixth_powers(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sum_sixth_powers_ok(n, result),
 } {

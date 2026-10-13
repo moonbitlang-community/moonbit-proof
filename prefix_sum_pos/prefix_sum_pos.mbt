@@ -8,8 +8,8 @@
 /// maintained because: new_sum = sum + xs[i] >= sum >= xs[k] for old k,
 /// and new_sum >= xs[i] since sum >= 0.
 pub fn sum_positive(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: nonempty(xs),
   proof_require: all_positive(xs),
   proof_ensure: result => prefix_sum_pos_ok(xs, result),

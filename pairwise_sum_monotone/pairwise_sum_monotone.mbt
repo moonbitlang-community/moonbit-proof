@@ -4,9 +4,9 @@
 ///
 /// Returns `Σ ys[i] - Σ xs[i]`, proving the gap is non-negative.
 pub fn pairwise_sum_gap(
-  xs : FixedArray[Int],
-  ys : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+  ys : FixedArray[Int32],
+) -> Int32 where {
   proof_require: same_length(xs, ys),
   proof_require: pointwise_le(xs, ys),
   proof_ensure: result => pairwise_sum_monotone_ok(result),

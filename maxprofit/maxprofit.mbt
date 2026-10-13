@@ -9,8 +9,8 @@
 /// pairs (j, k) with j <= k, the result is at least xs[k] - xs[j]. This
 /// proves global optimality over every possible buy-sell pair in the array.
 pub fn max_profit(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: nonempty(xs),
   proof_ensure: result => maxprofit_ok(xs, result),
 } {

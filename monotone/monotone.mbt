@@ -3,8 +3,8 @@
 ///
 /// Strict variant of checksorted (<  instead of <=).
 pub fn is_strictly_increasing(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_ensure: result => strictly_increasing_ok(xs, result),
 } {
   for i = 0, ok = 1; i < xs.length() - 1; {

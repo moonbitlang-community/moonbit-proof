@@ -6,8 +6,8 @@
 /// always bounded by the running total variation, so at the end any difference
 /// `xs[i] - xs[j]` is bounded by `tv`.
 pub fn total_var_diameter(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: nonempty(xs),
   proof_ensure: result => tv_diameter_ok(xs, result),
 } {

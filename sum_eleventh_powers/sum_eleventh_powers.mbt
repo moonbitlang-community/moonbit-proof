@@ -5,8 +5,8 @@
 /// To avoid division in the proof obligation, the postcondition is:
 ///   24 * result == n^2 (n-1)^2 (2n^8 - 8n^7 + 4n^6 + 16n^5 - 5n^4 - 26n^3 - 3n^2 + 20n + 10)
 pub fn sum_eleventh_powers(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sum_eleventh_powers_ok(n, result),
 } {

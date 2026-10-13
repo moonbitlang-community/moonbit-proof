@@ -11,9 +11,9 @@
 /// because |a| ≤ |b| iff a² ≤ b², and squared distance avoids absolute-value
 /// case splits in the invariant.
 pub fn find_closest(
-  xs : FixedArray[Int],
-  target : Int,
-) -> Int where {
+  xs : FixedArray[Int32],
+  target : Int32,
+) -> Int32 where {
   proof_require: nonempty(xs),
   proof_ensure: result => find_closest_ok(xs, target, result),
 } {

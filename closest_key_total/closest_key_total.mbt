@@ -5,9 +5,9 @@
 /// If the key is outside the array range, an endpoint is returned. Otherwise
 /// the proof reduces to the split-around-key argument from `closest_key_sorted`.
 pub fn closest_key_total(
-  xs : FixedArray[Int],
-  key : Int,
-) -> Int where {
+  xs : FixedArray[Int32],
+  key : Int32,
+) -> Int32 where {
   proof_require: nonempty(xs),
   proof_require: sorted(xs),
   proof_ensure: result => closest_key_total_ok(xs, key, result),

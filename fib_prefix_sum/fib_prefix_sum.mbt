@@ -7,8 +7,8 @@
 /// Tracks `(a, b) = (F(i), F(i+1))` together with:
 ///   sum + 1 == b
 pub fn fib_prefix_gap(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => fib_prefix_sum_ok(result),
 } {

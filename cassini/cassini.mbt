@@ -9,8 +9,8 @@
 /// This identity connects the Fibonacci sequence to determinants of 2×2
 /// matrices and has deep ties to continued fractions and hyperbolic geometry.
 pub fn cassini(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => cassini_ok(result),
 } {

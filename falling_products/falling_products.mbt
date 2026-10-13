@@ -5,8 +5,8 @@
 /// This is the shifted sibling of `sum_triples`, with invariant:
 ///   4*sum == i(i-1)(i-2)(i-3)
 pub fn falling_products(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => falling_products_ok(n, result),
 } {

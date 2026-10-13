@@ -5,8 +5,8 @@
 /// The invariant keeps the partial sum synchronized with the current endpoint:
 ///   sum == xs[i] - xs[0]
 pub fn telescoping_diff(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: has_two(xs),
   proof_ensure: result => telescoping_ok(xs, result),
 } {

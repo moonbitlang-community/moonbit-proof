@@ -5,8 +5,8 @@
 /// To avoid division in the proof obligation, the postcondition is:
 ///   24 * result == n^2 (n-1)^2 (3n^4 - 6n^3 - n^2 + 4n + 2)
 pub fn sum_seventh_powers(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sum_seventh_powers_ok(n, result),
 } {

@@ -3,8 +3,8 @@
 /// returns `max(xs) - min(xs)` and proves it upper-bounds every pairwise
 /// difference `xs[i] - xs[j]`.
 pub fn minmax_gap(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: nonempty(xs),
   proof_ensure: result => minmax_gap_ok(xs, result),
 } {

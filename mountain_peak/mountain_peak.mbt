@@ -5,8 +5,8 @@
 /// everything before the result is still rising, and from the result onward the
 /// array is strictly descending.
 pub fn mountain_peak(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: has_peak(xs),
   proof_require: adjacent_distinct(xs),
   proof_require: rise_partition(xs),
