@@ -18,9 +18,9 @@
 /// This proves that a single O(n) pass finds the globally optimal trade
 /// across an entire two-asset portfolio.
 pub fn portfolio_best(
-  xs : FixedArray[Int],
-  ys : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+  ys : FixedArray[Int32],
+) -> Int32 where {
   proof_require: same_length(xs, ys),
   proof_require: at_least_two(xs),
   proof_ensure: result => portfolio_ok(xs, ys, result),

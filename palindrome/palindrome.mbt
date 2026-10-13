@@ -5,8 +5,8 @@
 /// The quantifier body contains xs[xs.length()-1-k], requiring
 /// Z3 to verify array bounds for the reversed index.
 pub fn is_palindrome(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_ensure: result => palindrome_ok(xs, result),
 } {
   for i = 0, ok = 1; i < xs.length(); {

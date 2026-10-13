@@ -4,8 +4,8 @@
 ///
 /// This is the quartic analogue of `isqrt` and `cubicroot`.
 pub fn iroot4(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => fourth_root_ok(n, result),
 } {

@@ -5,8 +5,8 @@
 /// To avoid division in the proof obligation, the postcondition is:
 ///   66 * result == n(n-1)(2n-1)(3n^8 - 12n^7 + 8n^6 + 18n^5 - 10n^4 - 24n^3 + 2n^2 + 15n + 5)
 pub fn sum_tenth_powers(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sum_tenth_powers_ok(n, result),
 } {

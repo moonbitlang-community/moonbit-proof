@@ -4,9 +4,9 @@
 /// The search finds the first element `>= key`, then compares the two boundary
 /// candidates around that split.
 pub fn closest_key_index(
-  xs : FixedArray[Int],
-  key : Int,
-) -> Int where {
+  xs : FixedArray[Int32],
+  key : Int32,
+) -> Int32 where {
   proof_require: sorted(xs),
   proof_require: key_in_range(xs, key),
   proof_ensure: result => closest_key_ok(xs, key, result),

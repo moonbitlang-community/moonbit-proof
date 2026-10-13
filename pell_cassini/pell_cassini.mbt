@@ -7,8 +7,8 @@
 ///
 /// After one Pell step `(a, b) -> (b, a + 2b)`, the expression negates.
 pub fn pell_cassini(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => pell_cassini_ok(result),
 } {

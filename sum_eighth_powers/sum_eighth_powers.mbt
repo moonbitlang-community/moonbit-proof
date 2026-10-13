@@ -5,8 +5,8 @@
 /// To avoid division in the proof obligation, the postcondition is:
 ///   90 * result == n(n-1)(2n-1)(5n^6 - 15n^5 + 5n^4 + 15n^3 - n^2 - 9n - 3)
 pub fn sum_eighth_powers(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sum_eighth_powers_ok(n, result),
 } {

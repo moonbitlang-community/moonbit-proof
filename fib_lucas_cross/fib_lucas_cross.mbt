@@ -23,8 +23,8 @@
 /// x² - 5y² = ±4, whose solutions are exactly the Lucas-Fibonacci pairs.
 /// This is the algebraic foundation of the golden ratio's number theory.
 pub fn fib_lucas(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => fib_lucas_ok(result),
 } {

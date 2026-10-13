@@ -11,9 +11,9 @@
 ///                     = (pow - 1) + r*pow - pow
 ///                     = r*pow - 1 = new_pow - 1  ✓
 pub fn geometric_series(
-  n : Int,
-  r : Int,
-) -> Int where {
+  n : Int32,
+  r : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => geom_ok(result),
 } {

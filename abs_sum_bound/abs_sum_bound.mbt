@@ -7,8 +7,8 @@
 /// The key invariant is the encoded absolute-value bound:
 ///   abs_sum >= total  and  abs_sum >= -total
 pub fn abs_sum_gap(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_ensure: result => abs_sum_bound_ok(result),
 } {
   for i = 0, abs_sum = 0, total = 0; i < xs.length(); {

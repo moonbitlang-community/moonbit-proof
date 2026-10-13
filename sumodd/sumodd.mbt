@@ -4,8 +4,8 @@
 /// Invariant: sum == i*i.
 /// Preservation: sum + (2*i+1) = i² + 2i + 1 = (i+1)²  ✓
 pub fn sum_odd(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sumodd_ok(n, result),
 } {

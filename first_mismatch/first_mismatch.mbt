@@ -7,9 +7,9 @@
 ///   2. if `found == -1`, then the scanned prefix matches
 ///   3. if `found != -1`, all earlier positions still match
 pub fn first_mismatch(
-  xs : FixedArray[Int],
-  ys : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+  ys : FixedArray[Int32],
+) -> Int32 where {
   proof_require: same_length(xs, ys),
   proof_ensure: result => first_mismatch_ok(xs, ys, result),
 } {

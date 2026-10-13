@@ -6,8 +6,8 @@
 ///
 /// Preservation is a pure polynomial expansion after adding i².
 pub fn sum_squares(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sum_squares_ok(n, result),
 } {

@@ -7,8 +7,8 @@
 /// Z3 must reason about CUBIC terms during both the midpoint test
 /// and the search space narrowing — significantly harder than isqrt.
 pub fn icbrt(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => cbrt_ok(n, result),
 } {

@@ -4,11 +4,11 @@
 ///
 /// For four variables this expands to a six-term sum of pairwise squares.
 pub fn variance4_gap(
-  a : Int,
-  b : Int,
-  c : Int,
-  d : Int,
-) -> Int where {
+  a : Int32,
+  b : Int32,
+  c : Int32,
+  d : Int32,
+) -> Int32 where {
   proof_ensure: result => variance4_ok(a, b, c, d, result),
 } {
   4 * (a * a + b * b + c * c + d * d) - (a + b + c + d) * (a + b + c + d)

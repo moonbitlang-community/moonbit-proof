@@ -6,8 +6,8 @@
 /// Preservation: new_a = b >= 1 >= 0, new_b = a + b >= 0 + 1 = 1.
 /// Uses let bindings to avoid sequential assignment bug.
 pub fn fib(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => fib_ok(result),
 } {

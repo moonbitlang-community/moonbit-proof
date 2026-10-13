@@ -17,9 +17,9 @@
 /// At exit, r1 = 0 and r0 = gcd(a, b), so the first relation gives
 /// the classical Bezout identity: a * x0 + b * y0 = gcd(a, b).
 pub fn gcd(
-  a : Int,
-  b : Int,
-) -> Int where {
+  a : Int32,
+  b : Int32,
+) -> Int32 where {
   proof_require: pos2(a, b),
   proof_ensure: result => gcd_pos(result),
 } {

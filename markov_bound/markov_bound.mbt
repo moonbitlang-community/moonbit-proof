@@ -6,9 +6,9 @@
 ///   if xs[i] >= t: t*(count+1) = t*count + t <= sum + xs[i]  ✓
 ///   if xs[i] < t:  t*count <= sum <= sum + xs[i]  ✓
 pub fn markov(
-  xs : FixedArray[Int],
-  t : Int,
-) -> Int where {
+  xs : FixedArray[Int32],
+  t : Int32,
+) -> Int32 where {
   proof_require: all_nonneg(xs),
   proof_require: pos_t(t),
   proof_ensure: result => markov_ok(result),

@@ -10,10 +10,10 @@
 /// makes it a valid metric — essential for error-correcting codes, nearest-
 /// neighbor search, and DNA sequence analysis.
 pub fn hamming_triangle_gap(
-  a : FixedArray[Int],
-  b : FixedArray[Int],
-  c : FixedArray[Int],
-) -> Int where {
+  a : FixedArray[Int32],
+  b : FixedArray[Int32],
+  c : FixedArray[Int32],
+) -> Int32 where {
   proof_require: same_length(a, b, c),
   proof_ensure: result => nonneg(result),
 } {

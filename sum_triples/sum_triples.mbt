@@ -5,8 +5,8 @@
 /// The invariant is quartic but still SMT-friendly:
 ///   4*sum == i(i-1)(i+1)(i+2)
 pub fn sum_triples(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sum_triples_ok(n, result),
 } {

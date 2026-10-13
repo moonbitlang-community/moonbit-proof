@@ -4,15 +4,15 @@
 ///
 /// This is one of the most classical exact norm-multiplicativity identities.
 pub fn lagrange4sq(
-  a : Int,
-  b : Int,
-  c : Int,
-  d : Int,
-  e : Int,
-  f : Int,
-  g : Int,
-  h : Int,
-) -> Int where {
+  a : Int32,
+  b : Int32,
+  c : Int32,
+  d : Int32,
+  e : Int32,
+  f : Int32,
+  g : Int32,
+  h : Int32,
+) -> Int32 where {
   proof_ensure: result => lagrange4sq_ok(a, b, c, d, e, f, g, h, result),
 } {
   (a * e - b * f - c * g - d * h) * (a * e - b * f - c * g - d * h) +

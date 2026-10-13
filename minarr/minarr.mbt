@@ -3,8 +3,8 @@
 ///
 /// Proves: ∀ k, xs[result] <= xs[k] AND 0 <= result < n
 pub fn index_of_min(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: nonempty(xs),
   proof_ensure: result => is_min_index(xs, result),
 } {

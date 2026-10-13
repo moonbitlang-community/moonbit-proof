@@ -8,8 +8,8 @@
 /// The Fibonacci/Lucas recurrence step `(a, b) -> (b, a + b)` negates the
 /// quadratic form, so the result always has square 25.
 pub fn lucas_cassini(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => lucas_cassini_ok(result),
 } {

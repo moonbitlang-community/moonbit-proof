@@ -5,8 +5,8 @@
 /// Compared with the boolean `checksorted` example, this package proves an
 /// actual witness and still recovers global sortedness when the answer is -1.
 pub fn first_descent(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_ensure: result => first_descent_ok(xs, result),
 } {
   for i = 0, found = -1; i < xs.length() - 1; {

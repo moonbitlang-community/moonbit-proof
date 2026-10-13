@@ -17,11 +17,11 @@
 /// not just at the end — catching rounding errors, off-by-one bugs,
 /// and accounting discrepancies that have caused real financial losses.
 pub fn amortize(
-  init_bal : Int,
-  rate : Int,
-  pmt : Int,
-  n : Int,
-) -> Int where {
+  init_bal : Int32,
+  rate : Int32,
+  pmt : Int32,
+  n : Int32,
+) -> Int32 where {
   proof_require: valid_loan(init_bal, rate, pmt, n),
   proof_ensure: result => amort_ok(n, pmt, result),
 } {

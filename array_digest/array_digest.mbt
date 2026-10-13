@@ -16,8 +16,8 @@
 ///   0 <= profit <= max - min        (profit within range)
 ///   TV >= xs[i] - xs[j] for all i,j (all-pairs variation bound)
 pub fn digest(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: at_least_two(xs),
   proof_ensure: result => digest_ok(xs, result),
 } {

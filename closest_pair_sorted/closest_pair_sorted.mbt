@@ -9,8 +9,8 @@
 /// in the entire array, not just adjacent ones, and proves that no distant pair
 /// can have a smaller gap than the pair at `result`.
 pub fn closest_pair_sorted(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: at_least_two(xs),
   proof_require: sorted(xs),
   proof_ensure: result => closest_pair_sorted_ok(xs, result),

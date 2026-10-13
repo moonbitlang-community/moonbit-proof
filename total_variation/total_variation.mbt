@@ -10,8 +10,8 @@
 ///
 /// Preservation uses |d| >= d and |d| >= -d for d = xs[i+1]-xs[i].
 pub fn total_var(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: has_two(xs),
   proof_ensure: result => tv_ok(xs, result),
 } {

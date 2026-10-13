@@ -8,8 +8,8 @@
 /// Invariant:
 ///   4*sum == i²(i-1)²
 pub fn sum_cubes(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sum_cubes_ok(n, result),
 } {

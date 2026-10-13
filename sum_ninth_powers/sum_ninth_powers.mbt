@@ -5,8 +5,8 @@
 /// To avoid division in the proof obligation, the postcondition is:
 ///   20 * result == n^2 (n-1)^2 (2n^6 - 6n^5 + n^4 + 8n^3 + n^2 - 6n - 3)
 pub fn sum_ninth_powers(
-  n : Int,
-) -> Int where {
+  n : Int32,
+) -> Int32 where {
   proof_require: nonneg(n),
   proof_ensure: result => sum_ninth_powers_ok(n, result),
 } {

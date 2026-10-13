@@ -5,8 +5,8 @@
 /// the two boundary candidates around zero. The postcondition proves the
 /// returned index has globally minimal absolute value.
 pub fn closest_zero_index(
-  xs : FixedArray[Int],
-) -> Int where {
+  xs : FixedArray[Int32],
+) -> Int32 where {
   proof_require: sorted(xs),
   proof_require: crosses_zero(xs),
   proof_ensure: result => closest_zero_ok(xs, result),
